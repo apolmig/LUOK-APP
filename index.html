@@ -1,10 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>hello</title>
-  <meta charset="utf-8">
-</head>
-<body>
-  <script src="bundle.js"></script> 
+
+<html>
+  <head>
+    <!--Bootstrap-->
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+              integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+              crossorigin="anonymous"></script>
+
+      <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+      <link rel="stylesheet" type="text/css" href="css/custom.css">
+    <!--End Bootstrap-->
+
+    <title>Paperbot</title>
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid custom-navbar">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <img class="navbar-brand" alt="Brand" src="img/paperbot-logo.png">
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="custom-navbar nav navbar-nav navbar-right">
+            <li><a href="https://blog.skore.io/">Blog</a></li>
+            <li><a href="https://itunes.apple.com/app/apple-store/id1168208758?mt=8" target="_blank">iOS</a></li>
+            <li><a href="https://play.google.com/store/apps/details?id=ai.paperbot&referrer=utm_source%3DPaperbot%26utm_medium%3Dhome" target="_blank">Android</a></li>
+            <li><a href="https://web.paperbot.ai/signin">Login</a></li>
+            <li><a class="btn" id="cta" href="https://chingu-platypus.slack.com/oauth/202102266818.174b0b9e5d1263d7aec0a946a706028b4072b1808e74a607c2d287c4a0e6cc37">Add to Slack</a></li>
+
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <div class="header">
+      <div class="row">
+        <div class="header-box-1 col-lg-6 col-md-6 col-sm-12">
+          <h1>Your team's knowledge is endless. So are your Slack channels.</h1>
+          <p class="subheadline">Paperbot collects and organizes your most valuable content shared on Slack. Never miss another link again!</p>
+          <button type="button" class="btn-cta btn btn-primary btn-lg">Add to Slack</button>
+        </div>
+
+        <div class="header-box-2 col-lg-6 col-md-6 col-sm-12">
+          <img class="img-responsive" src="img/macbook.png" alt="">
+        </div>
+
+      </div>
+    </div>
+
+        <svg class="triangle" preserveAspectRadio="none" fill="white" viewBox="0 0 1080 46"><polygon x="0" y="0" points="0 46 1080 46 0 0"></polygon></svg>
+
 </body>
 </html>

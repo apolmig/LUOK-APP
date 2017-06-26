@@ -1,0 +1,140 @@
+html {
+  font-family: 'Merriweather Sans', sans-serif !important;
+}
+
+/* Navigation starts*/
+.navbar-default {
+  border: none;
+  margin-bottom: 0;
+}
+
+.custom-navbar {
+  background-color: #37cbb1;
+  padding: 5px;
+  text-align: center;
+}
+
+.custom-navbar ul li:last-child a {
+  border-color: white;
+  border-radius: 25px;
+  border-width: 2px;
+  font-weight: 700;
+  padding: 3px 1.2em;
+  margin: 5px 15px;
+}
+
+.navbar-brand {
+  padding: 9px 2em;
+}
+
+.custom-navbar a:link {
+    color: white !important;
+    text-decoration: none;
+    padding: 9px 1.2em;
+}
+
+.custom-navbar a:visited {
+    color: white !important;
+    text-decoration: none;
+    padding: 9px 1.2em;
+}
+
+.navbar-toggle .icon-bar {
+    border:1px solid white;
+}
+
+.navbar-toggle {
+  border: none;
+}
+
+.navbar-toggle:hover {
+  background-color: transparent !important;
+}
+
+.navbar-toggle:active {
+  background-color: transparent !important;
+}
+
+.navbar-toggle:focus {
+  background-color: transparent !important;
+}
+
+/* Navigation ends */
+
+/* Header starts */
+
+.header {
+  padding: 100px 20px;
+  background-color: #37cbb1;
+}
+
+.header h1 {
+  font-size: 3.375em;
+  font-weight: 300;
+  line-height: 1.3;
+}
+
+.header p {
+  font-size: 1.6em;
+  margin: 12px 0 32px;
+}
+
+.header-box-1 {
+  padding: 0 50px;
+  color: white;
+}
+
+.header-box-2 {
+  padding-top: 25px;
+}
+
+.subheadline {
+  color: #d4f5f0;
+}
+
+
+.btn-cta {
+  background-color: white;
+  color: #37cbb1;
+  border: 0;
+  border-radius: 25px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.triangle {
+  background-color: #37cbb1;
+}
+
+/* Header ends */
+
+
+/* RWD starts*/
+/* Mobile devices (360px and up) */
+@media screen and (min-width: 360px){
+  .header-box-1 {
+    text-align: center;
+  }
+}
+
+/* Small devices (tablets, 768px and up) */
+@media screen and (min-width: 768px){
+  .header-box-1 {
+    text-align: left;
+  }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media screen and (min-width: 992px){
+  .header-box-1 {
+    text-align: left;
+  }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media screen and (min-width: 1200px){
+  .header-box-1 {
+    text-align: left;
+  }
+}
+/* RWD ends */
