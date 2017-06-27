@@ -108,6 +108,7 @@ html {
 
 /* Header ends */
 
+
 /* Body Begins */
 
 .divider {
@@ -150,7 +151,8 @@ ul {
     list-style-position: inside;
     display:table; 
     margin:0 auto;
-}​
+}
+
 
 
 /* RWD starts*/
