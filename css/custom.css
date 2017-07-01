@@ -105,6 +105,31 @@ html {
 .triangle {
   background-color: #37cbb1;
 }
+/*mine starts here*/
+.triangle-ii{
+  background-color: #fff;
+}
+section.fake{
+  background-color: #e5e5e5;
+  margin-top: -1em;
+  height: 400px;
+}
+.m-t-m1{
+  margin-top:1em;
+}
+
+li{
+  font-size: 20px;
+  margin-bottom: 20px;
+  color:#d8d8d8;
+}
+li.img{
+  text-align: left;
+  margin-right:20px;
+}
+
+/*mine ends here*/
+
 
 /* Header ends */
 
