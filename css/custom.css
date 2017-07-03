@@ -177,7 +177,29 @@ ul {
     display:table; 
     margin:0 auto;
 }
+ 
+ .triangle-iii{
+  background-color: #fff;
+}
+section.real{
+  background-color: #545659;
+  margin-top: -1em;
+  height: 300px;
 
+}
+.m-t-m2{
+  margin-top:1.5em;
+}
+
+.btn-cta2 {
+  background-color: white;
+  color: #37cbb1;
+  border: 0;
+  border-radius: 25px;
+  padding-left: 30px;
+  padding-right: 30px;
+  align-content: center;
+}
 
 
 /* RWD starts*/
