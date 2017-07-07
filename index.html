@@ -6,147 +6,433 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- fav icon -->
-        <link rel="icon" type="image/png" href="img/favicon.png">
+        <link rel="icon" type="image/png" href="assets/img/favicon.png">
+
+         <!-- Font Awesome -->
+        <link rel="stylesheet"  href="assets/plugins/font-awesome/css/font-awesome.min.css">
         
-        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" type="text/css" href="css/custom.css">
+        <!-- Bootstrap Core CSS -->
+        <link rel="stylesheet" href="assets/plugins/mdb/css/bootstrap.min.css">
+
+        <!-- MDB Bootstrap -->
+        <link rel="stylesheet" href="assets/plugins/mdb/css/mdb.min.css">
+
+        <!-- Owl Carousel Assets -->
+        <link rel="stylesheet" type="text/css" href="assets/plugins/OwlCarousel/assets/owlcarousel/owl.carousel.min.css">
+        <link rel="stylesheet" type="text/css" href="assets/plugins/OwlCarousel/assets/owlcarousel/owl.theme.default.min.css">
+
+        <!-- custom -->
+        <link rel="stylesheet" type="text/css" href="assets/css/custom.css">
         
+        <!-- Google Font -->
         <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans" rel="stylesheet">
     </head>
     <body>
-        <nav class="navbar navbar-default">
-            <div class="container-fluid custom-navbar">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    </button>
-                    <img class="navbar-brand" alt="Brand" src="img/paperbot-logo.png">
-                </div>
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="custom-navbar nav navbar-nav navbar-right">
-                        <li><a href="https://blog.skore.io/">Blog</a></li>
-                        <li><a href="https://itunes.apple.com/app/apple-store/id1168208758?mt=8" target="_blank">iOS</a></li>
-                        <li><a href="https://play.google.com/store/apps/details?id=ai.paperbot&referrer=utm_source%3DPaperbot%26utm_medium%3Dhome" target="_blank">Android</a></li>
-                        <li><a href="https://web.paperbot.ai/signin">Login</a></li>
-                        <li><a class="btn" id="cta" href="https://chingu-platypus.slack.com/oauth/202102266818.174b0b9e5d1263d7aec0a946a706028b4072b1808e74a607c2d287c4a0e6cc37">Add to Slack</a></li>
-                    </ul>
-                </div><!-- /.navbar-collapse -->
-            </div><!-- /.container-fluid -->
-        </nav>
-        <div class="header">
-            <div class="row">
-                <div class="header-box-1 col-lg-6 col-md-6 col-sm-12">
-                    <h1>Your team's knowledge is endless. So are your Slack channels.</h1>
-                    <p class="subheadline">Paperbot collects and organizes your most valuable content shared on Slack. Never miss another link again!</p>
-                    <button type="button" class="btn-cta btn btn-primary btn-lg">Add to Slack</button>
-                </div>
-                <div class="header-box-2 col-lg-6 col-md-6 col-sm-12">
-                    <img class="img-responsive" src="img/macbook.png" alt="">
-                </div>
-            </div>
-        </div>
-        <svg class="triangle" preserveAspectRadio="none" fill="white" viewBox="0 0 1080 46">
-            <polygon x="0" y="0" points="0 46 1080 46 0 0"></polygon>
-        </svg>
-            <section role="clients" class="home-clients">
-                <div class="container">
-                    <div class="row">
-                        <h2 class="text-center"><strong>Thousands of teams</strong> already use Paperbot</h2><br><br><br>
-                        <div class="owl-carousel owl-theme carousel-clients owl-loaded owl-drag">
-                            <img class="logo-flat" src="img/buffer.png" height="15%" width="15%" alt="">
-                            <img class="logo-flat" src="img/salesforce.png" height="15%" width="15%" hspace="20" alt="">
-                            <img class="logo-flat" src="img/paypal.png" height="15%" width="15%"  hspace="20" alt="">
-                            <img class="logo-flat" src="img/giphy.png" height="15%" width="15%" hspace="20" alt="">
-                            <img class="logo-flat" src="img/microsoft.png" height="15%" width="15%" hspace="20" alt="">
-                            <img class="logo-flat" src="img/starbucks.png" height="15%" width="15%" hspace="20" alt="">
-                            <img class="logo-flat" src="img/ge.png" height="15%" width="15%" hspace="20" alt="">
-                            <img class="logo-flat" src="img/walmart.png" height="15%" width="15%" hspace="20" alt="">
+    <!-- header starts here -->
+    <header class="bg-brand">
+        <!-- top navigation starts here -->
+        <nav class="navbar-toggleable-md">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 mt-1">
+                        <div class="logo dis-inline">
+                            <a href="index.html">
+                                <img src="assets/img/paperbot-logo.png">
+                            </a>
                         </div>
-                    </div>
-                </div>
-            </section>
-            <svg class="triangle-ii" preserveAspectRadio="none" fill="#e5e5e5" viewBox="0 0 1080 46">
-                <polygon x="0" y="0" points="0 46 1080 46 0 0"></polygon>
-            </svg>
-            <section class="fake">
-                <div class="container">
-                    <h2 class="text-center m-t-m1"><strong>How it works</strong></h2>
-                    <div class="">
-                        <ul class="m-t-m1">
-                            <p>
-                                <img src="img/add.svg" alt="Add" height="40" width="40" hspace="10">
-                                 Add to Slack
-                             </p>
-                             <p>
-                                <img src="img/chat.svg" alt="Chat" height="40" width="40" hspace="10"> Invite into your channels
-                            </p>
-                            <p>
-                                <img src="img/newspaper.svg" alt="Newspaper" height="40" width="40" hspace="10"> Opt in to receive the digest
-                            </p>
-                            <p>
-                               <img src="img/tablet-and-laptop.svg" alt="Laptop" height="40" width="40" hspace="10"> View your links on the web or mobile app
-                            </p>
+                        <ul class="pull-right list-inline">
+                            <li class="list-inline-item pr-4 f-15">
+                                <a href="https://blog.skore.io/" class="white-text">Blog</a>
+                            </li>
+                            <li class="list-inline-item pr-4 f-15">
+                                <a href="https://itunes.apple.com/app/apple-store/id1168208758?pt=118082973&ct=Home%20Paperbot&mt=8" class="white-text">iOS</a>
+                            </li>
+                            <li class="list-inline-item pr-4 f-15">
+                                <a href="https://play.google.com/store/apps/details?id=ai.paperbot&referrer=utm_source%3DPaperbot%26utm_medium%3Dhome" class="white-text">Android</a>
+                            </li>
+                            <li class="list-inline-item f-15 pr-4">
+                                <a href="http://web.paperbot.ai" class="white-text">Login</a>
+                            </li>
+                            <li class="list-inline-item f-15">
+                                <a href="https://app.paperbot.ai/auth/slack?source=add_bot" class="btn btn-md text-white btn-outline-white bd-2">Add to Slack</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
-            </section>
-            <!-- end here -->
-            
-           
-            <br><br>
-                    
-            <section role="testimonials">
-                <div class="container home-testimonials">
-                    <div class="row">
-                        <div class="col-md-12 col-sm-12 col-xs-12">
-                            <div class="row testimonial">
-                                <div class="col-md-5 col-sm-5">
-                                    <img src="img/slack.png" alt="Tagging" height="250" width="400">
-                                </div>
-                                <div class="col-md-7 col-sm-7 text-center">
-                                    <h3><strong>Tagging</strong></h3>
-                                    <p style="font-size:17px">Automagically collect and categorize shared links from <br>your Slack channels.</p><a class="link-learn-more" href="http://help.paperbot.ai/the-basics/tagging" target="_blank">Learn more</a>
-                                </div>
+            </div>
+        </nav>
+        <!-- top navigation ends here -->
+        <div class="header">
+            <div class="row">
+                <div class="header-box-1 col-12 col-sm-12 col-md-6 col-lg-6">
+                    <h1 class="h1-responsive">Your team's knowledge is endless. So are your Slack channels.</h1>
+                    <p class="subheadline text-fluid">Paperbot collects and organizes your most valuable content shared on Slack. Never miss another link again!</p>
+                    <button type="button" class="btn-lg btn-cta">Add to Slack</button>
+                </div>
+                <div class="header-box-2 col-lg-6 col-md-6 col-sm-12">
+                    <img class="img-responsive" src="assets/img/macbook.png" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- / header ends here -->
+    
+    <!-- main setion starts here -->
+    <main class="section">
+        <svg class="triangle" preserveAspectRadio="none" fill="white" viewBox="0 0 1080 46">
+            <polygon x="0" y="0" points="0 46 1080 46 0 0"></polygon>
+        </svg>
+        <section role="clients" class="home-clients">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 mt-3">
+                        <h2 class="text-center">
+                        <strong>Thousands of teams</strong> already use Paperbot
+                    </h2>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 mt-2">
+                        <div class="owl-carousel mouse-drag">
+                            <div class="item">
+                                <img src="assets/img/buffer.png">
+
                             </div>
-                            <p><br><br></p>
-                            <div class="row testimonial">
-                                <div class="col-md-12 col-sm-12 visible-xs-block">
-                                    <img src="img/email.jpg" alt="E-mail Digest">
-                                </div>
-                                <div class="col-md-7 col-sm-7 text-center">
-                                    <h3><strong>Email Digest</strong></h3>
-                                    <p style="font-size:17px" >Opt in to get a summary of the top content shared on your <br>channels straight into your inbox.</p>
-                                    <a class="link-learn-more" href="http://help.paperbot.ai/the-basics/email-digest" target="_blank">Learn more</a>
-                                </div>
-                                <div class="col-md-5 col-sm-5 hidden-xs">
-                                    <img src="img/email.jpg" alt="E-mail Digest" height="250" width="400">
-                                </div>
+                            <div class="item"><img src="assets/img/salesforce.png"></div>
+                            <div class="item"><img src="assets/img/adobe.png"></div>
+                            <div class="item"><img src="assets/img/paypal.png"></div>
+                            <div class="item"><img src="assets/img/giphy.png"></div>
+                            <div class="item"><img src="assets/img/walmart.png"></div>
+                            <div class="item"><img src="assets/img/starbucks.png"></div>
+                            <div class="item"><img src="assets/img/microsoft.png"></div>
+                            <div class="item"><img src="assets/img/ge.png"></div>
+                            <div class="item"><img src="assets/img/ios-badge.png"></div>
+                            <div class="item"><img src="assets/img/android-badge.png"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+         <svg class="triangle-ii" preserveAspectRadio="none" fill="#f0f3f5" viewBox="0 0 1080 46">
+            <polygon x="0" y="0" points="0 46 1080 46 0 0"></polygon>
+        </svg>
+        <section class="fake m-t-m2">
+            <div class="container">
+                <h2 class="text-center pt-3"><strong>How it works</strong></h2>
+                <div class="">
+                    <ul class="m-t-m1">
+                        <li class="c-grey">
+                            <img src="assets/img/add.svg" alt="Add" height="40" width="40" hspace="10" class="dis-inline">
+                             Add to Slack
+                         </li>
+                         <li class="c-grey">
+                            <img src="assets/img/chat.svg" alt="Chat" height="40" width="40" hspace="10" class="dis-inline"> Invite into your channels
+                        </li>
+                        <li class="c-grey">
+                            <img src="assets/img/newspaper.svg" alt="Newspaper" height="40" width="40" hspace="10" class="dis-inline"> Opt in to receive the digest
+                        </li>
+                        <li class="c-grey">
+                           <img src="assets/img/tablet-and-laptop.svg" alt="Laptop" height="40" width="40" hspace="10" class="dis-inline"> View your links on the web or mobile app
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+         <svg class="triangle-bg-grey" preserveAspectRadio="none" fill="white" viewBox="0 0 1080 46">
+            <polygon x="0" y="0" points="0 46 1080 46 0 0"></polygon>
+        </svg>
+        <section role="testimonials">
+            <div class="container home-testimonials pt-3">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12">
+                        <div class="row testimonial">
+                            <div class="col-md-5 col-sm-5">
+                                <img src="assets/img/slack.png" class="no-box" alt="Tagging" height="250" width="400">
                             </div>
-                            <p><br><br></p>
-                            <div class="row">
-                                <div class="col-md-12 col-sm-12 col-xs-12">
-                                    <div class="row testimonial">
-                                        <div class="col-md-5 col-sm-5">
-                                            <img src="img/sharing.jpg" alt="Tagging" height="250" width="400">
-                                        </div>
-                                        <div class="col-md-7 col-sm-7 text-center">
-                                            <h3><strong>Web App</strong></h3>
-                                            <p style="font-size:17px">Keep your best Slack resources together in a beautifully<br>crafted webapp.</p><a class="link-learn-more" href="http://help.paperbot.ai/the-basics/tagging" target="_blank">Learn more</a>
-                                        </div>
+                            <div class="col-7 col-sm-7 col-md-7  text-center">
+                                <h3><strong>Tagging</strong></h3>
+                                <p style="font-size:17px">Automagically collect and categorize shared links from <br>your Slack channels.</p><a class="link-learn-more c-brand" href="http://help.paperbot.ai/the-basics/tagging" target="_blank">Learn more</a>
+                            </div>
+                        </div>
+                        <p><br><br></p>
+                        <div class="row testimonial">
+                            <!-- <div class="col-sm-12 visible-xs-block">
+                                <img src="assets/img/email.jpg" alt="E-mail Digest">
+                            </div> -->
+                            <div class="col-sm-7 col-md-7 text-center">
+                                <h3><strong>Email Digest</strong></h3>
+                                <p style="font-size:17px" >Opt in to get a summary of the top content shared on your <br>channels straight into your inbox.</p>
+                                <a class="link-learn-more c-brand" href="http://help.paperbot.ai/the-basics/email-digest" target="_blank">Learn more</a>
+                            </div>
+                            <div class="col-sm-5 col-md-5 hidden-xs">
+                                <img src="assets/img/email.jpg" class="no-box" alt="E-mail Digest" height="250" width="400">
+                            </div>
+                        </div>
+                        <p><br><br></p>
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-12">
+                                <div class="row testimonial">
+                                    <div class="col-5 col-sm-5 col-md-5">
+                                        <img src="assets/img/sharing.jpg" class="no-box" alt="Tagging" height="250" width="400">
+                                    </div>
+                                    <div class="col-7 col-sm-7 col-md-7 text-center">
+                                        <h3><strong>Web App</strong></h3>
+                                        <p style="font-size:17px">Keep your best Slack resources together in a beautifully<br>crafted webapp.</p><a class="link-learn-more c-brand" href="http://help.paperbot.ai/the-basics/tagging" target="_blank">Learn more</a>
                                     </div>
                                 </div>
+                                <p><br><br></p>
+                                <div class="row">
+                                    <div class="col-7 col-sm-7 col-md-7 text-center">
+                                        <h3><strong>Mobile Apps</strong></h3>
+                                        <p style="font-size:17px">Access your links from anywhere with iOS and Android apps
+                                      <br>channel with a powerful search tool</p>
+                                      <a class="link-learn-more c-brand" href="http://help.paperbot.ai/the-basics/email-digest" target="_blank">Learn more</a>
+                                    </div>
+                                    <div class="col-5 col-sm-5 col-md-5">
+                                        <div class="row">
+                                            <div class="col-4 col-sm-4 col-md-4">
+                                                <img src="assets/img/iphone.png" width="100px">
+                                            </div>
+                                            <div class="col-8 col-sm-8 col-md-8">
+                                                <div class="mt-3">
+                                                    <img src="assets/img/android-badge.png" width="150px" class="mb-1">
+                                                    <img src="assets/img/ios-badge.png" width="150px">
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                <div class="row testimonial m-t-m5">
+                                    <!-- <div class="col-md-12 col-sm-12 visible-xs-block">
+                                        <img src="assets/img/email.jpg" alt="E-mail Digest">
+                                    </div> -->
+                                    <div class="col-md-5 col-sm-5 hidden-xs">
+                                        <img src="assets/img/training.jpg" class="no-box" alt="E-mail Digest" height="250" width="400">
+                                    </div>
+                                    <div class="col-md-7 col-sm-7 text-center">
+                                        <h3><strong>Rich Search</strong></h3>
+                                        <p style="font-size:17px">Quickly find any content by date, name, keyword or
+                                      <br>channel with a powerful search tool</p>
+                                      <a class="link-learn-more c-brand" href="http://help.paperbot.ai/the-basics/email-digest" target="_blank">Learn more</a>
+                                    </div>
+                                    
+                                </div>
+                                <p><br><br></p>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+        </section> 
+        <!-- produt features -->
+        <div class="product-features pt-3">
+            <h1 class="product-features-title" style="text-align:center">And more</h1>
+            <div class="container m-b-2">
+                <div class="row">
+                    <div class="col-sm-6 text-center">
+                        <div >
+                            <a href="http://help.paperbot.ai/the-basics/web-app">
+                                <div class="img-holder dis-inline-b mb-2">
+                                    <img src="assets/img/multi-team.svg" class="no-box" alt="Multi Teams">
+                                </div>
+                            </a>
+                            <h5 ><i>Multi-Teams</i></h5>
+                            <p>Quickly switch between different<br>team profiles with one login</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-sm-6 text-center">
+                        <div>
+                            <a href="http://help.paperbot.ai/the-basics/deleting-links" target="_blank">
+                                <div class="img-holder dis-inline-b mb-2">
+                                    <img src="assets/img/trash.svg" class="no-box" alt="Delete Link" height="40" width="40">
+                                </div>
+                            </a>
+                            <h5><i>Delete Link</i></h5>
+                            <p>Remove links with one click to easily<br>keep your workspace in check</p>
+                        </div>
+                        
+                        <br>
+                    </div>
+                    
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 text-center">
+                        <div>
+                            <a href="http://help.paperbot.ai/the-basics/recommendations" target="_blank">
+                            <div class="img-holder dis-inline-b">
+                                <img src="assets/img/ai-based.svg" class="no-box" alt="Ai-Based">
+                            </div>
+                        </a>
+                        <h5><i>AI-based Recommendations</i></h5>
+                        <p>Get the most relevant content<br>especially curated for you</p>
+                        </div>
+                        
+                    </div>
+                    <div class="col-sm-6 text-center">
+                        <div>
+                            <a href="http://help.paperbot.ai/the-basics/focus-display" target="_blank">
+                                <div class="img-holder dis-inline-b">
+                                    <img src="assets/img/focus-display.svg" class="no-box" alt="Focus Display">
+                                </div>
+                            </a>
+                            <h5><i>Focus Display</i></h5>
+                            <p>Eliminate distractions and keep<br>focused on what matters</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <svg class="triangle-iii" preserveAspectRadio="none" fill="#545659" viewBox="0 0 1080 46">
+                <polygon x="0" y="0" points="0 46 1080 46 0 0"></polygon>
+            </svg>
+            <section class="real">
+                <div class="container">
+                    <h1 class="text-center m-t-m2 pt-5" style="color:White">
+                        <strong>Never miss another link again.</strong>
+                    </h1>
+                    <br>
+                    <p class="text-center white-text" style="font-size:20px"> Paperbot organizes the most relevant links shared<br> on your Slack channels, so you can stay informed<br> but not overwhelmed.
+                    </p>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-4"></div>
+                        <div class="col-md-4">
+                            <button type="button" class="btn-cta bd-2 c-brand btn-lg col-sm-offset-4 m-l-m5" width="255px">Add to Slack</button>
+                        </div>
+                        <div class="col-md-4"></div>
+                    </div>
+                    
+                </div>
             </section>
-            Lol
+            <svg class="triangle-v" preserveAspectRadio="none" fill="white" viewBox="0 0 1080 46">
+            <polygon x="0" y="0" points="0 46 1080 46 0 0"></polygon>
+        </svg>
+
+    </main>
+    <!-- / main section is here -->
+    <!-- footer starts here -->
+    <footer>
+        <div class="container m-t-m3">
+            <div class="row">
+                <div class="col-xs-6 col-sm-3 col-md-3">
+                    <h3>Learn more</h3>
+                    <ul class="footer-items">
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Login</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-sm-3 col-md-3">
+                    <h3>Company</h3>
+                    <ul class="footer-items">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-sm-3 col-md-3">
+                    <h3>Resources</h3>
+                    <ul class="footer-items">
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Privacy policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-sm-3 col-md-3">
+                    <h3>Follow Us</h3>
+                    <ul class="footer-items">
+                        <li class="social_link">
+                            <a href="#" class="fb m-r-m1"><span class="fa fa-facebook"></span></a>
+                            <a href="#" class="tweet m-r-m1"><span class="fa fa-twitter"></span></a>
+                            <a href="#" class="linked"><span class="fa fa-linkedin-square"></span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row m-t-m2">
+                <div class="col-md-3">
+                    <p>Search powered by <img src="assets/img/stopwatch.png" class=""><strong>  algolia</strong> </p>
+                </div>
+                <div class="col-md-3"></div>
+                <div class="col-md-2"></div>
+                <div class="col-md-4">
+                    <p>&copy;2017 Paperbot - made with <span class="fa fa-heart"></span> by skore.io</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <h6 class="text-center m-t-m5"><strong>Not created by, affiliated with, or supported by Slack Technologies, Inc.</strong> </h6>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer ends here -->
         
+        
+       
+        
+        <!-- end here -->
+        
+
+        
+              
+        
+        
+        <!--
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-6 col-sm-3 col-md-3">
+                        <nav class="footer-nav">
+                            <h3 class="footer-nav-title">Learn More</h3>
+                            <ul class="footer-list">
+                                <li><a href="https://blog.skore.io/">Blog</a></li>
+                                <li><a href="http://web.paperbot.ai">Login</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-xs-6 col-sm-3">
+                        <nav class="footer-nav">
+                            <h3 class="footer-nav-title">Company</h3>
+                            <ul class="footer-list">
+                                <li><a href="/about/">About us</a></li>
+                                <li><a href="/contact-us/">Contact us</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="clearfix visible-xs">
+                    </div>
+                    <div class="col-xs-6 col-sm-3">
+                        <nav class="footer-nav">
+                            <h3 class="footer-nav-title">Resources</h3>
+                            <ul class="footer-list">
+                               <li><a href="http://help.paperbot.ai" target="_blank">Help</a></li>
+                               <li><a href="/privacy-policy/">Privacy Policy</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-xs-6 col-sm-3">
+                        <nav class="footer-nav">
+                            <h3 class="footer-nav-title">Follow us</h3>
+                            <nav class="footer-nav-share">
+                                <a href="https://www.facebook.com/PaperBotHQ/" target="_blank">
+                                    <img src="img/facebook-logo.svg" alt="Facebook" height="30" width="30" hspace="10">
+                                </a>
+                               <a href="https://twitter.com/paperbothq" target="_blank">
+                                    <img src="img/twitter-logo.svg" alt="Twitter" height="30" width="30" hspace="10">
+                                </a>
+                                <a href="https://www.linkedin.com/company/11040852" target="_blank">
+                                    <img src="img/linkedin-logo.svg" alt="Linkedin" height="30" width="30" hspace="10">
+                                </a>
+                            </nav>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        -->
+        <!-- footer -->
+        
+
         <footer>
             <div class="container">
                 <div class="row">
@@ -169,11 +455,46 @@
         </footer>
     <!-- SCRIPTS -->
 
-    <!-- JQUERY -->
-    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+        
+        </footer>
+        <!--/ footer -->
 
-    <!-- BOOTSTRAP JS -->
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+        <!-- SCRIPTS -->
+
+        <!-- JQUERY -->
+        <script type="text/javascript" src="assets/plugins/mdb/js/jquery-3.1.1.min.js"></script>
+
+        <!-- Tether- Bootstrap Tooltips -->
+        <script type="text/javascript" src="assets/plugins/mdb/js/tether.min.js"></script>
+
+        <!-- BOOTSTRAP JS -->
+        <script type="text/javascript" src="assets/plugins/mdb/js/bootstrap.min.js"></script>
+
+        <!-- Mdb JS-->
+        <script type="text/javascript" src="assets/plugins/mdb/js/mdb.min.js"></script>
+
+        <!-- Owl Carousel JS -->
+        <script type="text/javascript" src="assets/plugins/OwlCarousel/assets/owlcarousel/owl.carousel.js"></script>
+        <script type="text/javascript">
+            $('.owl-carousel').owlCarousel({
+                rtl:true,
+                loop:true,
+                margin:10,
+                nav:true,
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    600:{
+                        items:3
+                    },
+                    1000:{
+                        items:5
+                    }
+                }
+            })
+        </script>
                                               
     </body>
 </html>
